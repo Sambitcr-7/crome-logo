@@ -1,0 +1,139 @@
+/* Adjust the logo-size to change the size of the logo */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #logo {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    position: relative;
+    background: #309d3b;
+    overflow: hidden;
+  }
+  
+  .circle,
+  .outline-circle {
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .circle {
+    width: 36%;
+    height: 36%;
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #91c1e7), color-stop(100%, #0d6cac));
+    z-index: 3;
+  }
+  
+  .outline-circle {
+    width: 46%;
+    height: 46%;
+    background: #eff1f8;
+    z-index: 2;
+  }
+  
+  .segment1 {
+    height: 65%;
+    width: 32%;
+    background: #f63421;
+    position: absolute;
+    top: -7.6%;
+    left: 14.7%;
+    transform: rotate(-25deg);
+  }
+  
+  .segment1:before {
+    position: absolute;
+    content: "";
+    background: #f63421;
+    height: 50%;
+    width: 200%;
+    left: 75%;
+    top: 29.6%;
+    transform: rotate(25deg);
+  }
+  
+  .segment1:after {
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    left: -17.4%;
+    top: 29.6%;
+    transform: rotate(-14deg);
+    border-bottom: 177.7777777778px solid #dc1c144f;
+    border-left: 44.4444444444px solid transparent;
+  }
+  
+  .segment2 {
+    height: 80%;
+    width: 40%;
+    background: #ffd013;
+    position: absolute;
+    bottom: -22%;
+    right: -0.7%;
+    transform: rotate(32deg);
+  }
+  
+  .segment2:before {
+    position: absolute;
+    content: "";
+    background: #ffd013;
+    height: 42%;
+    width: 150%;
+    right: 29%;
+    bottom: 68.4%;
+    transform: rotate(-32deg);
+  }
+  
+  .segment2:after {
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    left: -55%;
+    bottom: 74.73%;
+    transform: rotate(44deg);
+    border-bottom: 177.7777777778px solid #f7c00185;
+    border-left: 44.4444444444px solid transparent;
+  }
+  
+  .segment3 {
+    height: 80%;
+    width: 40%;
+    position: absolute;
+    bottom: -22%;
+    right: -0.7%;
+  }
+  
+  .segment3:after {
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    left: -21%;
+    border-bottom: 177.7777777778px solid #31a73cc7;
+    border-left: 44.4444444444px solid transparent;
+    transform: rotate(198deg);
+    bottom: 24%;
+  }
